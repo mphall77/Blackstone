@@ -1,6 +1,7 @@
 import React from "react";
 import * as ReactDOM from "react-dom/client";
-import "./index.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
+import "./Styles/Index.scss";
 import App from "./App";
 
 const container = document.getElementById("root");
