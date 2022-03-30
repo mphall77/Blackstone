@@ -1,19 +1,24 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "../Styles/NavBar.scss";
 
 const NavBar = () => {
 	return (
-		<div className="btn-group">
-			<a href="#" className="btn btn-primary " aria-current="page">
+		<nav className="btn-group">
+			<NavLink to={"/"} className="btn btn-primary " aria-current="page">
 				Meeting Rooms
-			</a>
-			<a href="#" className="btn btn-primary">
+			</NavLink>
+			<NavLink
+				to={"/bookings"}
+				className="btn btn-primary "
+				aria-current="page"
+			>
 				Bookings
-			</a>
-			<a href="#" className="btn btn-primary">
+			</NavLink>
+			<NavLink to={"/add"} className="btn btn-primary " aria-current="page">
 				New Room
-			</a>
-		</div>
+			</NavLink>
+		</nav>
 	);
 };
 
