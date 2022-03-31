@@ -1,0 +1,30 @@
+[
+    {
+    "meetingRoomId": 1,
+    "meetingName": "Scrum Standup",
+    "startDate": "2022-03-23T17:00:00.000Z",
+    "endDate": "2022-03-23T17:30:00.000Z",
+    "attendees": "jdoe@email.com, bdylan@email.com"
+},
+ {
+    "meetingRoomId": 2,
+    "meetingName": "Project Proposal",
+    "startDate": "2022-04-30T11:00:00.000Z",
+    "endDate": "2022-04-30T12:30:00.000Z",
+    "attendees": "bbking@blues.com, serena@tennis.com, beyonce@hive.com"
+},
+{
+    "meetingRoomId": 4,
+    "meetingName": "Party for The Cat in The Hat",
+    "startDate": "2022-05-27T18:00:00.000Z",
+    "endDate": "2022-05-27T21:00:00.000Z",
+    "attendees": "jack@beans.com, silly@goose.com, gold@fish.com, thing1@things.com, thing2@things.com"
+},
+{
+    "meetingRoomId": 7,
+    "meetingName": "Project Review",
+    "startDate": "2022-03-28T08:30:00.000Z",
+    "endDate": "2022-03-28T10:30:00.000Z",
+    "attendees": "this@work.com, that@work.com, the@work.com, other@work.com"
+}
+]

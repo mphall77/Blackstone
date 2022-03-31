@@ -1,8 +1,35 @@
 @import "./variables.scss";
 
+header {
+	width: 100vw;
+	position: sticky;
+	top: 0;
+	padding-top: 1vh;
+	padding-bottom: 5vh;
+	z-index: 1;
+	background-color: #5ad0dd;
+	border-bottom: 1px solid $clr-gray500;
+
+	h2 {
+		margin-top: 0.5rem;
+		color: $clr-blue;
+		font-size: 2rem;
+	}
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+
 .btn {
 	$radius: 0.3rem;
 	width: 8.75rem;
+}
+.btn-group,
+.btn-group-vertical {
+	margin-right: 1rem;
 }
 
 .btn:focus {
