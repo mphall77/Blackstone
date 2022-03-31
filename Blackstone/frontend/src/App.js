@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import roomsData from "./data/rooms.json";
+import bookingsData from "./data/bookings.json";
 
 // COMPONENTS
 import NavBar from "./Components/NavBar";
@@ -14,6 +15,7 @@ import FourOFour from "./Pages/FourOFour";
 
 function App() {
 	const [rooms, setRooms] = useState([]);
+	const [bookings, setBookings] = useState([]);
 
 	useEffect(() => {
 		const fetchAllRooms = async () => {
@@ -25,6 +27,18 @@ function App() {
 			}
 		};
 		fetchAllRooms();
+	}, []);
+
+	useEffect(() => {
+		const fetchAllBookings = async () => {
+			try {
+				let res = await bookingsData;
+				setBookings(res);
+			} catch (err) {
+				console.log(err);
+			}
+		};
+		fetchAllBookings();
 	}, []);
 
 	return (
@@ -43,7 +57,10 @@ function App() {
 					/> */}
 
 					{/* BOOKINGS */}
-					<Route path="/bookings" element={<BookingsList />} />
+					<Route
+						path="/bookings"
+						element={<BookingsList bookings={bookings} />}
+					/>
 					{/* <Route path="/bookings/:id" element={<BookingDetails />} /> */}
 
 					{/* 404 */}
