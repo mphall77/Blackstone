@@ -5,16 +5,16 @@ const RoomCard = ({ room }) => {
 	const { id, name, capacity, floor } = room;
 
 	return (
-		<div className="card rooms-list-card">
+		<div className="card border-dark mb-2 rooms-list-card">
 			<div className="card-body">
 				<h5 className="card-title">
-					<Link to={`/rooms/${room.id}`}>{room.name}</Link>
+					<Link to={`/rooms/${id}`}>{name}</Link>
 				</h5>
 				<p className="card-text">
-					<BsPeople /> Capacity: {room.capacity}
+					<BsPeople /> Capacity: {capacity}
 				</p>
 				<p className="card-text">
-					<BsBuilding /> Floor: {room.floor}
+					<BsBuilding /> Floor: {floor}
 				</p>
 			</div>
 		</div>
