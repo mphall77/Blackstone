@@ -47,7 +47,13 @@ function App() {
 		fetchAllBookings();
 	}, []);
 
-	// const addRoom = (room) => {};
+	const deleteBooking = async (meetingRoomId) => {
+		await api.delete(`/bookings/${meetingRoomId}`);
+		const newBookingsList = bookings.filter((booking) => {
+			return booking.meetingRoomId !== meetingRoomId;
+		});
+		setBookings(newBookingsList);
+	};
 
 	return (
 		<div className="App">
