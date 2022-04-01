@@ -21,7 +21,7 @@ const AddRoom = ({ rooms }) => {
 		};
 
 		try {
-			const res = await api.post(`/rooms`, req);
+			const res = await api.post(`/meetingRooms`, req);
 			setRoom([res.data, ...rooms]);
 			navigate("/meeting-rooms");
 		} catch (err) {
