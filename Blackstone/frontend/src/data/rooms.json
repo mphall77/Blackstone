@@ -1,50 +1,50 @@
 [
+        {
+        "id": 1,
+        "name": "Meeting Room 1",
+        "capacity": 3,
+        "floor": 22
+    },
     {
-    "id": 1,
-    "name": "Meeting Room 1",
-    "capacity": 3,
-    "floor": 22
-},
- {
-    "id": 2,
-    "name": "Meeting Room 2",
-    "capacity": 6,
-    "floor": 20
-},
- {
-    "id": 3,
-    "name": "Meeting Room 3",
-    "capacity": 30,
-    "floor": 12
-},
- {
-    "id": 4,
-    "name": "Meeting Room 4",
-    "capacity": 10,
-    "floor": 12
-},
-   {
-    "id": 5,
-    "name": "Meeting Room 5",
-    "capacity": 4,
-    "floor": 22
-},
- {
-    "id": 6,
-    "name": "Meeting Room 6",
-    "capacity": 8,
-    "floor": 4
-},
- {
-    "id": 7,
-    "name": "Meeting Room 7",
-    "capacity": 16,
-    "floor": 8
-},
- {
-    "id": 8,
-    "name": "Meeting Room 8",
-    "capacity": 10,
-    "floor": 6
-}
+        "id": 2,
+        "name": "Meeting Room 2",
+        "capacity": 6,
+        "floor": 20
+    },
+    {
+        "id": 3,
+        "name": "Meeting Room 3",
+        "capacity": 30,
+        "floor": 12
+    },
+    {
+        "id": 4,
+        "name": "Meeting Room 4",
+        "capacity": 10,
+        "floor": 12
+    },
+    {
+        "id": 5,
+        "name": "Meeting Room 5",
+        "capacity": 4,
+        "floor": 22
+    },
+    {
+        "id": 6,
+        "name": "Meeting Room 6",
+        "capacity": 8,
+        "floor": 4
+    },
+    {
+        "id": 7,
+        "name": "Meeting Room 7",
+        "capacity": 16,
+        "floor": 8
+    },
+    {
+        "id": 8,
+        "name": "Meeting Room 8",
+        "capacity": 10,
+        "floor": 6
+    }
 ]

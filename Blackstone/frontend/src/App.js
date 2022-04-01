@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import roomsData from "./data/rooms.json";
-import bookingsData from "./data/bookings.json";
+import api from "./api/database.js";
 
 // COMPONENTS
 import NavBar from "./Components/NavBar";
@@ -17,23 +16,30 @@ function App() {
 	const [rooms, setRooms] = useState([]);
 	const [bookings, setBookings] = useState([]);
 
+	// get rooms from api
+	const getRooms = async () => {
+		const res = await api.get("/rooms");
+		return res.data;
+	};
+
 	useEffect(() => {
-		const fetchAllRooms = async () => {
+		const getAllRooms = async () => {
 			try {
-				let res = await roomsData;
-				setRooms(res);
+				const allRooms = await getRooms();
+				if (allRooms) setRooms(allRooms);
 			} catch (err) {
 				console.log(err);
 			}
 		};
-		fetchAllRooms();
+
+		getAllRooms();
 	}, []);
 
 	useEffect(() => {
 		const fetchAllBookings = async () => {
 			try {
-				let res = await bookingsData;
-				setBookings(res);
+				let res = await api.get("/bookings");
+				if (res) setBookings(res.data);
 			} catch (err) {
 				console.log(err);
 			}
