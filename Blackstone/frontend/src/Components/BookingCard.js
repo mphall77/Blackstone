@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { BsClock, BsBuilding } from "react-icons/bs";
 
 const BookingCard = ({ booking }) => {
@@ -8,15 +7,13 @@ const BookingCard = ({ booking }) => {
 	return (
 		<div className="card border-dark mb-2 bookings-list-card">
 			<div className="card-body">
-				<h5 className="card-title">
-					<Link to={`bookings/${meetingRoomId}`}>{meetingName}</Link>
-				</h5>
+				<h5 className="card-title">{meetingName}</h5>
 				<p className="card-text">need to add meeting room name</p>
 				<p className="card-text">
-					<BsClock /> Start: {startDate}
+					<BsClock /> Start: {new Date(startDate).toLocaleString()}
 				</p>
 				<p className="card-text">
-					<BsClock /> End: {endDate}
+					<BsClock /> End: {new Date(endDate).toLocaleString()}
 				</p>
 				<p className="card-text">
 					<BsBuilding /> Floor: "need to add floor from room data"
