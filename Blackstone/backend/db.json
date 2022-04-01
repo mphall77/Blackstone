@@ -62,6 +62,13 @@
       "startDate": "2022-04-08T09:35",
       "endDate": "2022-04-08T10:38",
       "attendees": ""
+    },
+    {
+      "meetingName": "test1",
+      "startDate": "2022-04-16T10:44",
+      "endDate": "2022-04-16T11:47",
+      "attendees": "testers",
+      "id": 9
     }
   ],
   "meetingRooms": [
@@ -100,6 +107,12 @@
       "name": "kitchen",
       "capacity": 3,
       "floor": 4
+    },
+    {
+      "name": "test kitchen",
+      "capacity": "12",
+      "floor": "34",
+      "id": 7
     }
   ]
 }
