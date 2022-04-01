@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// const { uuid } = require("uuidv4");
 import api from "./api/database.js";
 
 // COMPONENTS
@@ -16,7 +17,6 @@ function App() {
 	const [rooms, setRooms] = useState([]);
 	const [bookings, setBookings] = useState([]);
 
-	// get rooms from api
 	const getRooms = async () => {
 		const res = await api.get("/rooms");
 		return res.data;
@@ -47,6 +47,8 @@ function App() {
 		fetchAllBookings();
 	}, []);
 
+	// const addRoom = (room) => {};
+
 	return (
 		<div className="App">
 			<Router>
@@ -55,7 +57,7 @@ function App() {
 					{/* ROOMS */}
 					<Route path="/" element={<Home />} />
 					<Route path="/meeting-rooms" element={<RoomsList rooms={rooms} />} />
-					<Route path="/add" element={<AddRoom />} />
+					<Route path="/add" element={<AddRoom rooms={rooms} />} />
 					{/* <Route path="/meeting-rooms/:id" element={<RoomDetails />} /> */}
 					{/* <Route
 						path="/meeting-rooms/:id/bookings"

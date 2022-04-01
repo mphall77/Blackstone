@@ -1,8 +1,8 @@
-import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import api from "../api/database.js";
 
-const AddRoom = () => {
+const AddRoom = ({ rooms }) => {
 	const [room, setRoom] = useState({
 		name: "",
 		capacity: "",
@@ -16,8 +16,13 @@ const AddRoom = () => {
 	};
 
 	const addNewRoom = async (newRoom) => {
+		const req = {
+			...newRoom,
+		};
+
 		try {
-			await axios.post(`http://localhost:3000/meeting-rooms`, newRoom);
+			const res = await api.post(`/rooms`, req);
+			setRoom([res.data, ...rooms]);
 			navigate("/meeting-rooms");
 		} catch (err) {
 			console.log(err);

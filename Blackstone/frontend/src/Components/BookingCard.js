@@ -21,6 +21,9 @@ const BookingCard = ({ booking }) => {
 				<p className="card-text">
 					<BsBuilding /> Floor: "need to add floor from room data"
 				</p>
+				<button type="button" className="btn btn-outline-danger btn-sm">
+					Cancel
+				</button>
 			</div>
 		</div>
 	);
