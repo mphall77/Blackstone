@@ -19,7 +19,7 @@ function App() {
 	const [bookings, setBookings] = useState([]);
 
 	const getRooms = async () => {
-		const res = await api.get("/rooms");
+		const res = await api.get("/meetingRooms");
 		return res.data;
 	};
 
