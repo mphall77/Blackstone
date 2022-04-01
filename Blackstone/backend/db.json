@@ -1,5 +1,70 @@
 {
-  "rooms": [
+  "bookings": [
+    {
+      "id": 1,
+      "meetingRoomId": 2,
+      "meetingName": "Project Proposal",
+      "startDate": "2022-04-30T11:00:00.000Z",
+      "endDate": "2022-04-30T12:30:00.000Z",
+      "attendees": "bbking@blues.com, serena@tennis.com, beyonce@hive.com"
+    },
+    {
+      "id": 2,
+      "meetingRoomId": 4,
+      "meetingName": "Party for The Cat in The Hat",
+      "startDate": "2022-05-27T18:00:00.000Z",
+      "endDate": "2022-05-27T21:00:00.000Z",
+      "attendees": "jack@beans.com, silly@goose.com, gold@fish.com, thing1@things.com, thing2@things.com"
+    },
+    {
+      "id": 3,
+      "meetingRoomId": 2,
+      "meetingName": "Scrum Standup",
+      "startDate": "2022-03-23T17:00:00.000Z",
+      "endDate": "2022-03-23T17:30:00.000Z",
+      "attendees": "jdoe@email.com, bdylan@email.com"
+    },
+    {
+      "id": 4,
+      "meetingRoomId": 3,
+      "meetingName": "Team Beta -- Scrum Standup",
+      "startDate": "2022-03-23T17:00:00.000Z",
+      "endDate": "2022-03-23T17:30:00.000Z",
+      "attendees": "jdoe@email.com, bdylan@email.com"
+    },
+    {
+      "id": 5,
+      "meetingRoomId": 5,
+      "meetingName": "Team Yellow -- summer days",
+      "startDate": "2022-04-08T08:50:00.000Z",
+      "endDate": "2022-04-08T10:20:00.000Z",
+      "attendees": ""
+    },
+    {
+      "id": 6,
+      "meetingRoomId": 6,
+      "meetingName": "Team Bread -- Bake Sale Prep",
+      "startDate": "2022-04-08T18:00",
+      "endDate": "2022-04-08T20:02",
+      "attendees": ""
+    },
+    {
+      "id": 7,
+      "meetingRoomId": 5,
+      "meetingName": "Team Blue -- Paint the Town",
+      "startDate": "2022-04-08T08:50:00.000Z",
+      "endDate": "2022-04-08T10:20:00.000Z",
+      "attendees": "azure@work.com, teal@work.com"
+    },
+    {
+      "id": 8,
+      "meetingName": "Mgrs Huddle",
+      "startDate": "2022-04-08T09:35",
+      "endDate": "2022-04-08T10:38",
+      "attendees": ""
+    }
+  ],
+  "meetingRooms": [
     {
       "id": 1,
       "name": "Meeting Room 1",
@@ -8,13 +73,13 @@
     },
     {
       "id": 2,
-      "name": "Meeting Room 2",
-      "capacity": 6,
-      "floor": 20
+      "name": "table",
+      "capacity": 8,
+      "floor": 7
     },
     {
       "id": 3,
-      "name": "Meeting Room 3",
+      "name": "Board Room 3",
       "capacity": 30,
       "floor": 12
     },
@@ -26,75 +91,15 @@
     },
     {
       "id": 5,
-      "name": "Meeting Room 5",
-      "capacity": 4,
-      "floor": 22
+      "name": "roof",
+      "capacity": 333,
+      "floor": 333
     },
     {
       "id": 6,
-      "name": "Meeting Room 6",
-      "capacity": 8,
+      "name": "kitchen",
+      "capacity": 3,
       "floor": 4
-    },
-    {
-      "id": 7,
-      "name": "Meeting Room 7",
-      "capacity": 16,
-      "floor": 8
-    },
-    {
-      "id": 8,
-      "name": "Meeting Room 8",
-      "capacity": 10,
-      "floor": 6
-    },
-    {
-      "id": 50,
-      "name": "Test",
-      "capacity": 44,
-      "floor": 23
-    },
-    {
-      "name": "roof",
-      "capacity": "333",
-      "floor": "333",
-      "id": 51
-    },
-    {
-      "name": "test2",
-      "capacity": "9",
-      "floor": "34",
-      "id": 52
-    }
-  ],
-  "bookings": [
-    {
-      "meetingRoomId": 1,
-      "meetingName": "Scrum Standup",
-      "startDate": "2022-03-23T17:00:00.000Z",
-      "endDate": "2022-03-23T17:30:00.000Z",
-      "attendees": "jdoe@email.com, bdylan@email.com"
-    },
-    {
-      "meetingRoomId": 2,
-      "meetingName": "Project Proposal",
-      "startDate": "2022-04-30T11:00:00.000Z",
-      "endDate": "2022-04-30T12:30:00.000Z",
-      "attendees": "bbking@blues.com, serena@tennis.com, beyonce@hive.com"
-    },
-    {
-      "meetingRoomId": 4,
-      "meetingName": "Party for The Cat in The Hat",
-      "startDate": "2022-05-27T18:00:00.000Z",
-      "endDate": "2022-05-27T21:00:00.000Z",
-      "attendees": "jack@beans.com, silly@goose.com, gold@fish.com, thing1@things.com, thing2@things.com"
-    },
-    {
-      "meetingRoomId": 7,
-      "meetingName": "Project Review",
-      "startDate": "2022-03-28T08:30:00.000Z",
-      "endDate": "2022-03-28T10:30:00.000Z",
-      "attendees": "this@work.com, that@work.com, the@work.com, other@work.com"
     }
   ]
 }
