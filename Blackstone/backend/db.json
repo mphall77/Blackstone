@@ -1,14 +1,6 @@
 {
   "bookings": [
     {
-      "id": 1,
-      "meetingRoomId": 2,
-      "meetingName": "Project Proposal",
-      "startDate": "2022-04-30T11:00:00.000Z",
-      "endDate": "2022-04-30T12:30:00.000Z",
-      "attendees": "bbking@blues.com, serena@tennis.com, beyonce@hive.com"
-    },
-    {
       "id": 2,
       "meetingRoomId": 4,
       "meetingName": "Party for The Cat in The Hat",
@@ -55,6 +47,7 @@
       "startDate": "2022-04-08T08:50:00.000Z",
       "endDate": "2022-04-08T10:20:00.000Z",
       "attendees": "azure@work.com, teal@work.com"
+<<<<<<< HEAD
     },
     {
       "id": 8,
@@ -76,6 +69,8 @@
       "endDate": "2022-04-06T13:25",
       "attendees": "a, b, c",
       "id": 10
+=======
+>>>>>>> d393762c315dedc17a8e9c2e9e397ac2d91b9c29
     }
   ],
   "meetingRooms": [
@@ -120,6 +115,24 @@
       "capacity": "12",
       "floor": "34",
       "id": 7
+    },
+    {
+      "name": "Boardroom 3",
+      "capacity": "6",
+      "floor": "3",
+      "id": 8
+    },
+    {
+      "name": "success room",
+      "capacity": "3",
+      "floor": "3",
+      "id": 9
+    },
+    {
+      "name": "Test",
+      "capacity": "4",
+      "floor": "4",
+      "id": 10
     }
   ]
 }
