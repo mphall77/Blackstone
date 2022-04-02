@@ -48,10 +48,10 @@ function App() {
 		fetchAllBookings();
 	}, []);
 
-	const deleteBooking = async (meetingRoomId) => {
-		await api.delete(`/bookings/${meetingRoomId}`);
+	const deleteBooking = async (id) => {
+		await api.delete(`/bookings/${id}`);
 		const newBookingsList = bookings.filter((booking) => {
-			return booking.meetingRoomId !== meetingRoomId;
+			return booking.id !== id;
 		});
 		setBookings(newBookingsList);
 	};
@@ -77,7 +77,9 @@ function App() {
 					{/* BOOKINGS */}
 					<Route
 						path="/bookings"
-						element={<BookingsList bookings={bookings} />}
+						element={
+							<BookingsList bookings={bookings} getBookingId={deleteBooking} />
+						}
 					/>
 					{/* <Route path="/bookings/:id" element={<BookingDetails />} /> */}
 
