@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 
 // COMPONENTS
 import BookingForm from "./BookingForm.js";
+import RoomBookingList from "./RoomBookingList.js";
 
 const RoomDetails = ({ rooms }) => {
 	const [room, setRoom] = useState({});
@@ -35,7 +36,9 @@ const RoomDetails = ({ rooms }) => {
 			<div>
 				<BookingForm room={room} />
 			</div>
-			<div>List of bookings for this room</div>
+			<div>
+				<RoomBookingList room={room} />
+			</div>
 		</section>
 	);
 };

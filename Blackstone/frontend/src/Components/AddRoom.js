@@ -22,7 +22,7 @@ const AddRoom = ({ rooms }) => {
 		};
 
 		try {
-			const res = await api.post(`/meetingRooms`, req);
+			const res = await api.post(`/meeting-rooms`, req);
 			setRoom([res.data, ...rooms]);
 			navigate("/meeting-rooms");
 		} catch (err) {

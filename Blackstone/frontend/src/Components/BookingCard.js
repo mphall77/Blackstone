@@ -1,7 +1,7 @@
 import { BsClock, BsBuilding } from "react-icons/bs";
 
 const BookingCard = (props) => {
-	const { id, meetingRoomId, meetingName, startDate, endDate, attendees } =
+	const { id, meeting_roomId, meetingName, startDate, endDate, attendees } =
 		props.booking;
 	// const { id, name, capacity, floor } = room;
 
