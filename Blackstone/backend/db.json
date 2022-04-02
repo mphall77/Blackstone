@@ -69,6 +69,13 @@
       "endDate": "2022-04-16T11:47",
       "attendees": "testers",
       "id": 9
+    },
+    {
+      "meetingName": "eat lunch",
+      "startDate": "2022-04-06T12:21",
+      "endDate": "2022-04-06T13:25",
+      "attendees": "a, b, c",
+      "id": 10
     }
   ],
   "meetingRooms": [
