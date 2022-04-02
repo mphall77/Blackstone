@@ -28,7 +28,7 @@ const RoomDetails = ({ rooms }) => {
 
 	return (
 		<section>
-			<div className="card room-info">
+			<div className="card border-dark mb-2">
 				<h4>{room.name}</h4>
 				<p>{room.capacity}</p>
 				<p>{room.floor}</p>

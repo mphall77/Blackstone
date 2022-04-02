@@ -21,22 +21,17 @@ const RoomBookingList = ({ room }) => {
 			}
 		};
 		fetchAllBookings();
-	}, []);
+	}, [room]);
 
 	return (
 		<section>
 			<h5>List of bookings for this room</h5>
 			{!id || (bookings.length === 0 && <EmptyList />)}
 
-			{bookings.length > 0 && (
-				<div className="card">
-					{bookings.map((booking) => {
-						return (
-							<BookingCard booking={booking} key={booking.id} room={room} />
-						);
-					})}
-				</div>
-			)}
+			{bookings.length > 0 &&
+				bookings.map((booking) => {
+					return <BookingCard booking={booking} key={booking.id} room={room} />;
+				})}
 		</section>
 	);
 };
