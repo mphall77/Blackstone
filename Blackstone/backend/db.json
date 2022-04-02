@@ -47,6 +47,30 @@
       "startDate": "2022-04-08T08:50:00.000Z",
       "endDate": "2022-04-08T10:20:00.000Z",
       "attendees": "azure@work.com, teal@work.com"
+<<<<<<< HEAD
+    },
+    {
+      "id": 8,
+      "meetingName": "Mgrs Huddle",
+      "startDate": "2022-04-08T09:35",
+      "endDate": "2022-04-08T10:38",
+      "attendees": ""
+    },
+    {
+      "meetingName": "test1",
+      "startDate": "2022-04-16T10:44",
+      "endDate": "2022-04-16T11:47",
+      "attendees": "testers",
+      "id": 9
+    },
+    {
+      "meetingName": "eat lunch",
+      "startDate": "2022-04-06T12:21",
+      "endDate": "2022-04-06T13:25",
+      "attendees": "a, b, c",
+      "id": 10
+=======
+>>>>>>> d393762c315dedc17a8e9c2e9e397ac2d91b9c29
     }
   ],
   "meeting-rooms": [
