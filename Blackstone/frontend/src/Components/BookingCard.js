@@ -1,7 +1,8 @@
 import { BsClock, BsBuilding } from "react-icons/bs";
 
-const BookingCard = ({ booking }) => {
-	const { meetingRoomId, meetingName, startDate, endDate, attendees } = booking;
+const BookingCard = (props) => {
+	const { id, meetingRoomId, meetingName, startDate, endDate, attendees } =
+		props.booking;
 	// const { id, name, capacity, floor } = room;
 
 	return (
@@ -18,7 +19,11 @@ const BookingCard = ({ booking }) => {
 				<p className="card-text">
 					<BsBuilding /> Floor: "need to add floor from room data"
 				</p>
-				<button type="button" className="btn btn-outline-danger btn-sm">
+				<button
+					type="button"
+					className="btn btn-outline-danger btn-sm"
+					onClick={() => props.handleClick(id)}
+				>
 					Cancel
 				</button>
 			</div>

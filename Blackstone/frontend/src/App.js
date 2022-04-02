@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// const { uuid } = require("uuidv4");
 import api from "./api/database.js";
 
 // COMPONENTS
@@ -48,12 +47,15 @@ function App() {
 		fetchAllBookings();
 	}, []);
 
-	const deleteBooking = async (meetingRoomId) => {
-		await api.delete(`/bookings/${meetingRoomId}`);
-		const newBookingsList = bookings.filter((booking) => {
-			return booking.meetingRoomId !== meetingRoomId;
-		});
-		setBookings(newBookingsList);
+	const deleteBooking = async (id) => {
+		var res = window.confirm("Are you sure you want to delete this?");
+		if (res) {
+			await api.delete(`/bookings/${id}`);
+			const newBookingsList = bookings.filter((booking) => {
+				return booking.id !== id;
+			});
+			setBookings(newBookingsList);
+		}
 	};
 
 	return (
@@ -77,7 +79,9 @@ function App() {
 					{/* BOOKINGS */}
 					<Route
 						path="/bookings"
-						element={<BookingsList bookings={bookings} />}
+						element={
+							<BookingsList bookings={bookings} getBookingId={deleteBooking} />
+						}
 					/>
 					{/* <Route path="/bookings/:id" element={<BookingDetails />} /> */}
 
