@@ -48,11 +48,14 @@ function App() {
 	}, []);
 
 	const deleteBooking = async (id) => {
-		await api.delete(`/bookings/${id}`);
-		const newBookingsList = bookings.filter((booking) => {
-			return booking.id !== id;
-		});
-		setBookings(newBookingsList);
+		var res = window.confirm("Are you sure you want to delete this?");
+		if (res) {
+			await api.delete(`/bookings/${id}`);
+			const newBookingsList = bookings.filter((booking) => {
+				return booking.id !== id;
+			});
+			setBookings(newBookingsList);
+		}
 	};
 
 	return (

@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import api from "../api/database.js";
 
 const AddRoom = ({ rooms }) => {
+	const [submitted, setSubmitted] = useState(false);
 	const [room, setRoom] = useState({
 		name: "",
 		capacity: "",
@@ -31,7 +32,13 @@ const AddRoom = ({ rooms }) => {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		addNewRoom(room);
+
+		let res = addNewRoom(room);
+		if (res.status.success === true) {
+			setSubmitted(true);
+		} else {
+			alert("That did not Work. Please try again.");
+		}
 	};
 
 	return (
@@ -96,6 +103,7 @@ const AddRoom = ({ rooms }) => {
 					Submit
 				</button>
 			</form>
+			{submitted && alert("Success! You have added a new Room.")}
 		</section>
 	);
 };
