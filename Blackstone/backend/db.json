@@ -2,7 +2,7 @@
   "bookings": [
     {
       "id": 2,
-      "meetingRoomId": 4,
+      "meeting-roomId": 4,
       "meetingName": "Party for The Cat in The Hat",
       "startDate": "2022-05-27T18:00:00.000Z",
       "endDate": "2022-05-27T21:00:00.000Z",
@@ -10,7 +10,7 @@
     },
     {
       "id": 3,
-      "meetingRoomId": 2,
+      "meeting-roomId": 2,
       "meetingName": "Scrum Standup",
       "startDate": "2022-03-23T17:00:00.000Z",
       "endDate": "2022-03-23T17:30:00.000Z",
@@ -18,7 +18,7 @@
     },
     {
       "id": 4,
-      "meetingRoomId": 3,
+      "meeting-roomId": 3,
       "meetingName": "Team Beta -- Scrum Standup",
       "startDate": "2022-03-23T17:00:00.000Z",
       "endDate": "2022-03-23T17:30:00.000Z",
@@ -26,7 +26,7 @@
     },
     {
       "id": 5,
-      "meetingRoomId": 5,
+      "meeting-roomId": 5,
       "meetingName": "Team Yellow -- summer days",
       "startDate": "2022-04-08T08:50:00.000Z",
       "endDate": "2022-04-08T10:20:00.000Z",
@@ -34,7 +34,7 @@
     },
     {
       "id": 6,
-      "meetingRoomId": 6,
+      "meeting-roomId": 6,
       "meetingName": "Team Bread -- Bake Sale Prep",
       "startDate": "2022-04-08T18:00",
       "endDate": "2022-04-08T20:02",
@@ -42,14 +42,14 @@
     },
     {
       "id": 7,
-      "meetingRoomId": 5,
+      "meeting-roomId": 5,
       "meetingName": "Team Blue -- Paint the Town",
       "startDate": "2022-04-08T08:50:00.000Z",
       "endDate": "2022-04-08T10:20:00.000Z",
       "attendees": "azure@work.com, teal@work.com"
     }
   ],
-  "meetingRooms": [
+  "meeting-rooms": [
     {
       "id": 1,
       "name": "Meeting Room 1",

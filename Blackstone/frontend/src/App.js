@@ -8,6 +8,7 @@ import RoomsList from "./Components/RoomsList";
 import BookingsList from "./Components/BookingsList";
 import AddRoom from "./Components/AddRoom";
 import RoomDetails from "./Components/RoomDetails.js";
+import BookingDetails from "./Components/BookingDetails.js";
 
 //PAGES
 import Home from "./Pages/Home";
@@ -18,7 +19,7 @@ function App() {
 	const [bookings, setBookings] = useState([]);
 
 	const getRooms = async () => {
-		const res = await api.get("/meetingRooms");
+		const res = await api.get("/meeting-rooms");
 		return res.data;
 	};
 
@@ -83,7 +84,10 @@ function App() {
 							<BookingsList bookings={bookings} getBookingId={deleteBooking} />
 						}
 					/>
-					{/* <Route path="/bookings/:id" element={<BookingDetails />} /> */}
+					<Route
+						path="/bookings/:id"
+						element={<BookingDetails bookings={bookings} />}
+					/>
 
 					{/* 404 */}
 					<Route path="*" element={<FourOFour />} />
