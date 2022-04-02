@@ -86,7 +86,7 @@ function App() {
 					/>
 					<Route
 						path="/bookings/:id"
-						element={<BookingDetails bookings={bookings} />}
+						element={<BookingDetails bookings={bookings} rooms={rooms} />}
 					/>
 
 					{/* 404 */}
