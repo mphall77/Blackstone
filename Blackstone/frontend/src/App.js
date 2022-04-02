@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// const { uuid } = require("uuidv4");
 import api from "./api/database.js";
 
 // COMPONENTS
