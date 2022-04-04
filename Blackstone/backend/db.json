@@ -47,6 +47,21 @@
       "startDate": "2022-04-08T08:50:00.000Z",
       "endDate": "2022-04-08T10:20:00.000Z",
       "attendees": "azure@work.com, teal@work.com"
+    },
+    {
+      "meetingName": "test suite booking",
+      "startDate": "2022-04-04T05:13",
+      "endDate": "2022-04-04T06:13",
+      "attendees": "",
+      "id": 8
+    },
+    {
+      "meetingName": "esss",
+      "startDate": "2022-04-04T05:16",
+      "endDate": "2022-04-04T06:16",
+      "attendees": "",
+      "roomId": "13",
+      "id": 9
     }
   ],
   "rooms": [
@@ -121,6 +136,12 @@
       "capacity": "3",
       "floor": "3",
       "id": 12
+    },
+    {
+      "name": "test suite",
+      "capacity": "33",
+      "floor": "3",
+      "id": 13
     }
   ]
 }
