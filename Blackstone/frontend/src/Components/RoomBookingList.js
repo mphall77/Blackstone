@@ -13,7 +13,7 @@ const RoomBookingList = ({ room }) => {
 		const fetchAllBookings = async () => {
 			if (id) {
 				try {
-					const res = await api.get(`/meeting-rooms/${id}/bookings`);
+					const res = await api.get(`/rooms/${id}/bookings`);
 					setBookings(res.data);
 				} catch (err) {
 					console.log(err);

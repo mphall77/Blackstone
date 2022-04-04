@@ -1,25 +1,33 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { BsClock, BsBuilding, BsTrash } from "react-icons/bs";
 
 // COMPONENTS
 import EmptyList from "./EmptyList";
 
-const BookingDetails = ({ bookings, rooms }) => {
+const BookingDetails = ({ bookings, rooms, getBookingId }) => {
 	const [booking, setBooking] = useState({});
 	const [room, setRoom] = useState({});
 
 	let { id } = useParams();
+	let navigate = useNavigate();
+
+	const deleteBooking = (id) => {
+		getBookingId(id);
+		navigate("/rooms");
+	};
 
 	useEffect(() => {
 		const singleBooking = async () => {
 			try {
-				const res = bookings.filter((booking) => booking.id === Number(id));
+				const res = await bookings.filter(
+					(booking) => booking.id === Number(id)
+				);
 				setBooking(res[0]);
 				if (res[0]) {
-					const roomRes = rooms.filter(
-						(room) => room.id === res[0]["meeting-roomId"]
+					const roomRes = await rooms.filter(
+						(room) => room.id == Number(res[0]["roomId"])
 					);
 					setRoom(roomRes[0]);
 				}
@@ -40,7 +48,7 @@ const BookingDetails = ({ bookings, rooms }) => {
 			<div className="card border-dark mb-2">
 				<div className="card-body">
 					<h4>{booking.meetingName}</h4>
-					<p className="card-text">{room.name}</p>
+					{/* <p className="card-text">{room.name}</p> */}
 					<p className="card-text">
 						<BsClock className="icon" /> Start:{" "}
 						{new Date(booking.startDate).toLocaleString()}
@@ -50,17 +58,17 @@ const BookingDetails = ({ bookings, rooms }) => {
 						{new Date(booking.endDate).toLocaleString()}
 					</p>
 					<p className="card-text">
-						<BsBuilding className="icon" /> Floor: {room.floor}
+						{/* <BsBuilding className="icon" /> Floor: {room.floor} */}
 					</p>
-					{/* <button
-						type="button"
-						className="btn btn-outline-danger btn-sm "
-						onClick={() => handleClick(id)}
-					>
-						<BsTrash className="icon" style={{ color: "lightgrey" }} />
-						Cancel
-					</button> */}
 				</div>
+				<button
+					type="button"
+					className="btn btn-outline-danger btn-sm "
+					onClick={() => deleteBooking(id)}
+				>
+					<BsTrash className="icon" style={{ color: "lightgrey" }} />
+					Cancel
+				</button>
 			</div>
 		</section>
 	);

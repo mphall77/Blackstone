@@ -5,7 +5,7 @@ const RoomCard = ({ room }) => {
 	const { id, name, capacity, floor } = room;
 
 	return (
-		<Link to={`/meeting-rooms/${id}`} style={{ textDecoration: "none" }}>
+		<Link to={`/rooms/${id}`} style={{ textDecoration: "none" }}>
 			<div className="card border-dark mb-2 overflow-scroll shadow ">
 				<div className="card-body">
 					<h5 className="card-title">{name}</h5>

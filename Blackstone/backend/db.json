@@ -25,14 +25,6 @@
       "attendees": "jdoe@email.com, bdylan@email.com"
     },
     {
-      "id": 5,
-      "roomId": 5,
-      "meetingName": "Team Yellow -- summer days",
-      "startDate": "2022-04-08T08:50:00.000Z",
-      "endDate": "2022-04-08T10:20:00.000Z",
-      "attendees": ""
-    },
-    {
       "id": 6,
       "roomId": 6,
       "meetingName": "Team Bread -- Bake Sale Prep",
@@ -41,27 +33,11 @@
       "attendees": ""
     },
     {
-      "id": 7,
-      "roomId": 5,
-      "meetingName": "Team Blue -- Paint the Town",
-      "startDate": "2022-04-08T08:50:00.000Z",
-      "endDate": "2022-04-08T10:20:00.000Z",
-      "attendees": "azure@work.com, teal@work.com"
-    },
-    {
       "meetingName": "test suite booking",
       "startDate": "2022-04-04T05:13",
       "endDate": "2022-04-04T06:13",
       "attendees": "",
       "id": 8
-    },
-    {
-      "meetingName": "esss",
-      "startDate": "2022-04-04T05:16",
-      "endDate": "2022-04-04T06:16",
-      "attendees": "",
-      "roomId": "13",
-      "id": 9
     }
   ],
   "rooms": [
@@ -103,26 +79,26 @@
     },
     {
       "name": "test kitchen",
-      "capacity": "12",
-      "floor": "34",
+      "capacity": 12,
+      "floor": 34,
       "id": 7
     },
     {
       "name": "Boardroom 3",
-      "capacity": "6",
-      "floor": "3",
+      "capacity": 6,
+      "floor": 3,
       "id": 8
     },
     {
       "name": "success room",
-      "capacity": "3",
-      "floor": "3",
+      "capacity": 3,
+      "floor": 2,
       "id": 9
     },
     {
       "name": "Test",
-      "capacity": "4",
-      "floor": "4",
+      "capacity": 4,
+      "floor": 5,
       "id": 10
     },
     {
@@ -133,14 +109,14 @@
     },
     {
       "name": "Cake Bar",
-      "capacity": "3",
-      "floor": "3",
+      "capacity": 3,
+      "floor": 6,
       "id": 12
     },
     {
       "name": "test suite",
-      "capacity": "33",
-      "floor": "3",
+      "capacity": 9,
+      "floor": 11,
       "id": 13
     }
   ]

@@ -14,7 +14,7 @@ const NavBar = () => {
 				</NavLink>
 				<div className="btn-group">
 					<NavLink
-						to={"/meeting-rooms"}
+						to={"/rooms"}
 						className="btn btn-primary "
 						aria-current="page"
 					>

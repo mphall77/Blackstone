@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
-import { BsClock, BsBuilding, BsTrash } from "react-icons/bs";
+import { BsClock } from "react-icons/bs";
 
 const BookingCard = (props) => {
-	const { id, meetingRoomId, meetingName, startDate, endDate, attendees } =
+	const { id, roomId, meetingName, startDate, endDate, attendees } =
 		props.booking;
-	// const { id, name, capacity, floor } = room;
 
 	return (
 		<Link to={`/bookings/${id}`} style={{ textDecoration: "none" }}>
@@ -19,14 +18,6 @@ const BookingCard = (props) => {
 						<BsClock className="icon" /> End:{" "}
 						{new Date(endDate).toLocaleString()}
 					</p>
-					<button
-						type="button"
-						className="btn btn-outline-danger btn-sm "
-						onClick={() => props.handleClick(id)}
-					>
-						<BsTrash className="icon" style={{ color: "lightgrey" }} />
-						Cancel
-					</button>
 				</div>
 			</div>
 		</Link>

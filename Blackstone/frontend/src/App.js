@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+	BrowserRouter as Router,
+	Routes,
+	Route,
+	useNavigate,
+} from "react-router-dom";
 import api from "./api/database.js";
 
 // COMPONENTS
@@ -66,16 +71,9 @@ function App() {
 				<Routes>
 					{/* ROOMS */}
 					<Route path="/" element={<Home />} />
-					<Route path="/meeting-rooms" element={<RoomsList rooms={rooms} />} />
+					<Route path="/rooms" element={<RoomsList rooms={rooms} />} />
 					<Route path="/add" element={<AddRoom rooms={rooms} />} />
-					<Route
-						path="/meeting-rooms/:id"
-						element={<RoomDetails rooms={rooms} />}
-					/>
-					{/* <Route
-						path="/meeting-rooms/:id/bookings"
-						element={<RoomBookingList />}
-					/> */}
+					<Route path="/rooms/:id" element={<RoomDetails rooms={rooms} />} />
 
 					{/* BOOKINGS */}
 					<Route
@@ -88,7 +86,7 @@ function App() {
 							<BookingDetails
 								bookings={bookings}
 								rooms={rooms}
-								deleteBooking={deleteBooking}
+								getBookingId={deleteBooking}
 							/>
 						}
 					/>
