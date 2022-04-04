@@ -84,6 +84,7 @@ function App() {
 					/>
 					<Route
 						path="/bookings/:id"
+<<<<<<< HEAD
 						element={
 							<BookingDetails
 								bookings={bookings}
@@ -91,6 +92,9 @@ function App() {
 								getBookingId={deleteBooking}
 							/>
 						}
+=======
+						element={<BookingDetails bookings={bookings} rooms={rooms} />}
+>>>>>>> bug-bookingDetails
 					/>
 
 					{/* 404 */}
