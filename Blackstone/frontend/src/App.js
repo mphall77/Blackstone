@@ -19,7 +19,7 @@ function App() {
 	const [bookings, setBookings] = useState([]);
 
 	const getRooms = async () => {
-		const res = await api.get("/meeting-rooms");
+		const res = await api.get("/rooms");
 		return res.data;
 	};
 
@@ -88,7 +88,7 @@ function App() {
 							<BookingDetails
 								bookings={bookings}
 								rooms={rooms}
-								getBookingId={deleteBooking}
+								deleteBooking={deleteBooking}
 							/>
 						}
 					/>

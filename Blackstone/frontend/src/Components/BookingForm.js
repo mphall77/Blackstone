@@ -8,7 +8,7 @@ const BookingForm = ({ room }) => {
 		startDate: "",
 		endDate: "",
 		attendees: "",
-		roomId: room.id,
+		roomId: `${room.id}`,
 	});
 
 	let navigate = useNavigate();
