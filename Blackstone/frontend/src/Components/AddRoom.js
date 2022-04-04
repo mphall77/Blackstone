@@ -43,13 +43,14 @@ const AddRoom = ({ rooms }) => {
 
 	return (
 		<section className="form_container">
-			<h2>Create a Room</h2>
+			<h5>Create a Room:</h5>
 
 			<form>
 				<div className="row mb-3">
-					<label htmlFor="name" className="col-sm-2 col-form-label">
+					<label htmlFor="name" className="col-sm-2 col-form-label ">
 						Room Name:
 					</label>
+
 					<div className="col-sm-7">
 						<input
 							type="text"
@@ -57,12 +58,13 @@ const AddRoom = ({ rooms }) => {
 							id="name"
 							placeholder="Boardroom 1"
 							onChange={handleChange("name")}
+							required
 						/>
 					</div>
 				</div>
 
 				<div className="row mb-3">
-					<label htmlFor="floor" className="col-sm-2 col-form-label">
+					<label htmlFor="floor" className="col-sm-2 col-form-label ">
 						Floor:
 					</label>
 					<div className="col-sm-7">
@@ -74,6 +76,7 @@ const AddRoom = ({ rooms }) => {
 							min="1"
 							max="60"
 							onChange={handleChange("floor")}
+							required
 						/>
 					</div>
 				</div>
@@ -91,6 +94,7 @@ const AddRoom = ({ rooms }) => {
 							min="2"
 							max="100"
 							onChange={handleChange("capacity")}
+							required
 						/>
 					</div>
 				</div>

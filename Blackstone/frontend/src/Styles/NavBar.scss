@@ -5,10 +5,10 @@ header {
 	position: sticky;
 	top: 0;
 	padding-top: 1vh;
-	padding-bottom: 5vh;
-	z-index: 1;
-	background-color: #5ad0dd;
-	border-bottom: 1px solid $clr-gray500;
+	padding-bottom: 2vh;
+	z-index: 99;
+	background-color: $clr-primary;
+	border-bottom: 2px solid $clr-gray400;
 
 	h2 {
 		margin-top: 0.5rem;
