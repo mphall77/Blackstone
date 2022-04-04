@@ -80,13 +80,17 @@ function App() {
 					{/* BOOKINGS */}
 					<Route
 						path="/bookings"
-						element={
-							<BookingsList bookings={bookings} getBookingId={deleteBooking} />
-						}
+						element={<BookingsList bookings={bookings} />}
 					/>
 					<Route
 						path="/bookings/:id"
-						element={<BookingDetails bookings={bookings} rooms={rooms} />}
+						element={
+							<BookingDetails
+								bookings={bookings}
+								rooms={rooms}
+								getBookingId={deleteBooking}
+							/>
+						}
 					/>
 
 					{/* 404 */}

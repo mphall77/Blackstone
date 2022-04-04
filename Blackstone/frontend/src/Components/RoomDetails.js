@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { BsPeople, BsBuilding } from "react-icons/bs";
 
 // COMPONENTS
 import BookingForm from "./BookingForm.js";
@@ -27,19 +28,25 @@ const RoomDetails = ({ rooms }) => {
 	}
 
 	return (
-		<section>
-			<div className="card border-dark mb-2">
-				<h4>{room.name}</h4>
-				<p>{room.capacity}</p>
-				<p>{room.floor}</p>
-			</div>
-			<div>
-				<BookingForm room={room} />
-			</div>
-			<div>
-				<RoomBookingList room={room} />
-			</div>
-		</section>
+		<>
+			<section>
+				<div className="card border-dark mb-2 ">
+					<div className="card-body">
+						<h5 className="card-title">{room.name}</h5>
+						<p className="card-text">
+							<BsPeople className="icon" /> Capacity: {room.capacity}
+						</p>
+						<p className="card-text">
+							<BsBuilding className="icon" /> Floor: {room.floor}
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<BookingForm room={room} />
+
+			<RoomBookingList room={room} />
+		</>
 	);
 };
 

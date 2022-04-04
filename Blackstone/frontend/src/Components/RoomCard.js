@@ -5,19 +5,19 @@ const RoomCard = ({ room }) => {
 	const { id, name, capacity, floor } = room;
 
 	return (
-		<div className="card border-dark mb-2 rooms-list-card">
-			<div className="card-body">
-				<h5 className="card-title">
-					<Link to={`/meeting-rooms/${id}`}>{name}</Link>
-				</h5>
-				<p className="card-text">
-					<BsPeople /> Capacity: {capacity}
-				</p>
-				<p className="card-text">
-					<BsBuilding /> Floor: {floor}
-				</p>
+		<Link to={`/meeting-rooms/${id}`} style={{ textDecoration: "none" }}>
+			<div className="card border-dark mb-2 overflow-scroll shadow ">
+				<div className="card-body">
+					<h5 className="card-title">{name}</h5>
+					<p className="card-text">
+						<BsPeople className="icon" /> Capacity: {capacity}
+					</p>
+					<p className="card-text">
+						<BsBuilding className="icon" /> Floor: {floor}
+					</p>
+				</div>
 			</div>
-		</div>
+		</Link>
 	);
 };
 
