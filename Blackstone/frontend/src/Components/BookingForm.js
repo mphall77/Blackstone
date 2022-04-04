@@ -8,7 +8,7 @@ const BookingForm = ({ room }) => {
 		startDate: "",
 		endDate: "",
 		attendees: "",
-		meetingRoomId: room.id,
+		roomId: room.id,
 	});
 
 	let navigate = useNavigate();
@@ -37,8 +37,8 @@ const BookingForm = ({ room }) => {
 	};
 
 	return (
-		<div>
-			<p>Book Rooom:</p>
+		<section>
+			<h5>Book Rooom:</h5>
 			<form>
 				<div className="row mb-3">
 					<label htmlFor="meetingName" className="col-sm-2 col-form-label">
@@ -49,6 +49,7 @@ const BookingForm = ({ room }) => {
 							type="text"
 							className="form-control"
 							id="meetingName"
+							placeholder="Team Summer -- Beach Party Planning"
 							onChange={handleChange("meetingName")}
 							required
 						/>
@@ -107,7 +108,7 @@ const BookingForm = ({ room }) => {
 					Submit
 				</button>
 			</form>
-		</div>
+		</section>
 	);
 };
 

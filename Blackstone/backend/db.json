@@ -47,30 +47,55 @@
       "startDate": "2022-04-08T08:50:00.000Z",
       "endDate": "2022-04-08T10:20:00.000Z",
       "attendees": "azure@work.com, teal@work.com"
-<<<<<<< HEAD
     },
     {
-      "id": 8,
-      "meetingName": "Mgrs Huddle",
-      "startDate": "2022-04-08T09:35",
-      "endDate": "2022-04-08T10:38",
-      "attendees": ""
+      "meetingName": "Test submit  for Room 1",
+      "startDate": "2022-04-02T14:58",
+      "endDate": "2022-04-02T16:56",
+      "attendees": "submit with room  id attached",
+      "id": 8
     },
     {
-      "meetingName": "test1",
-      "startDate": "2022-04-16T10:44",
-      "endDate": "2022-04-16T11:47",
-      "attendees": "testers",
+      "meetingName": "Test Room 1 underscore",
+      "startDate": "2022-04-02T14:59",
+      "endDate": "2022-04-02T16:01",
+      "attendees": "meeting_roomId: room.id,",
       "id": 9
     },
     {
-      "meetingName": "eat lunch",
-      "startDate": "2022-04-06T12:21",
-      "endDate": "2022-04-06T13:25",
-      "attendees": "a, b, c",
+      "meetingName": "test room",
+      "startDate": "",
+      "endDate": "",
+      "attendees": "roomId: room.id,",
       "id": 10
-=======
->>>>>>> d393762c315dedc17a8e9c2e9e397ac2d91b9c29
+    },
+    {
+      "meetingName": "Test roon",
+      "startDate": "",
+      "endDate": "",
+      "attendees": "",
+      "id": 11
+    },
+    {
+      "meetingName": "Test Room",
+      "startDate": "",
+      "endDate": "",
+      "attendees": "",
+      "id": 12
+    },
+    {
+      "meetingName": "Test RoomId: 1 ",
+      "startDate": "2022-04-02T15:05",
+      "endDate": "2022-04-02T16:05",
+      "attendees": "roomId: room.id,",
+      "id": 13
+    },
+    {
+      "meetingName": "eat lunch",
+      "startDate": "",
+      "endDate": "",
+      "attendees": "",
+      "id": 14
     }
   ],
   "meeting-rooms": [
@@ -133,6 +158,12 @@
       "capacity": "4",
       "floor": "4",
       "id": 10
+    },
+    {
+      "name": "bob",
+      "capacity": "",
+      "floor": "",
+      "id": 11
     }
   ]
 }
